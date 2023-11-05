@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(circle, #cccbf2 0%, #180e28 100%);
+  justify-content: center;
+}
+
+#container {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+#highscoreTable {
+  border: 1 px solid white;
+  background-color: #7660abed;
+  width: 150px;
+  height: 200px;
+  margin: 10px;
+  padding: 15px;
+}
+
+#table {
+  color: #fff;
+  float: left;
+  width: 150px;
+  margin: 10px 10px 10px 20px;
+  padding: 5px;
+  font-weight: 600;
+}
+
+#highscore {
+  color: #f0f8ff;
+  width: 100px;
+  margin-left: 20px;
+}
+
+#wrapper {
+  float: left;
+  background-color: #7660abed;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  align-self: center;
+  width: 60vw;
+  height: 83vh;
+  margin: 0 10% 20%;
+  padding-left: 1%;
+  padding-right: 1%;
+  box-shadow: 10px 10px 10px 10px;
+}
+
+.submit {
+  color: #e5d5f5;
+  background-color: #0000;
+  border: 1px solid #e5d5f5;
+  border-radius: 5px;
+  margin-bottom: 2%;
+  padding: 1%;
+  font-family: Black Ops One, cursive;
+  box-shadow: 5px 0 9px;
+}
+
+#player-name, #computer-name {
+  color: #e5d5f5;
+  font-family: Black Ops One, cursive;
+}
+
+#game-name {
+  text-align: center;
+  color: #e5d5f5;
+  margin: 1vh 1vh 1vh 13px;
+  font-family: Black Ops One, cursive;
+  font-size: 60px;
+}
+
+#input-player-one, #input-player-two {
+  text-align: center;
+  width: 50%;
+  margin: 1%;
+  padding: 1%;
+}
+
+label {
+  color: #e5d5f5;
+  margin: 20px;
+  font-family: Black Ops One, cursive;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+input {
+  text-align: center;
+  border-radius: 10px;
+  height: 40px;
+  margin: 20px;
+  font-family: Black Ops One, cursive;
+}
+
+h2 {
+  color: #e5d5f5;
+  font-family: Black Ops One, cursive;
+  font-size: xx-large;
+}
+
+#container-2 {
+  justify-content: space-between;
+  display: flex;
+}
+
+#pick-1, #pick-2 {
+  text-align: center;
+  background-color: #e5d5f5;
+  border: 1px solid #9e9d9d;
+  border-radius: 10px;
+  width: 50%;
+  height: 18vh;
+  margin: 1%;
+  padding: 10%;
+}
+
+#container-3 {
+  justify-content: space-between;
+  display: flex;
+}
+
+#image-container-pl-1, #image-container-pl-2 {
+  text-align: center;
+  width: 50%;
+  height: 10vh;
+  margin: 1%;
+  padding: 1%;
+}
+
+#play {
+  text-align: center;
+  color: #e5d5f5;
+  border: 3px solid #f0f8ff;
+  border-radius: 8px;
+  align-content: center;
+  width: 15%;
+  margin: .2vh .2vh .2vh 43%;
+  font-family: Black Ops One, cursive;
+  box-shadow: 9px 0 9px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+#countStart {
+  color: #f0f8ff;
+  margin-top: 10%;
+  font-family: Black Ops One, cursive;
+}
+
+#pop-up {
+  z-index: 1;
+  height: 30px;
+}
+
+#winner-is {
+  text-align: center;
+  z-index: 2;
+  justify-content: center;
+  margin: 0;
+  position: relative;
+}
+
+@media (width <= 768px) {
+  #wrapper {
+    width: 90vw;
+    margin: 10% 5%;
+  }
+
+  #game-name {
+    margin: 5vh;
+    font-size: 40px;
+  }
+
+  #input-player-one, #input-player-two {
+    width: 60%;
+  }
+
+  #pick-1, #pick-2 {
+    height: 20vh;
+    padding: 5%;
+  }
+
+  #play {
+    width: 50%;
+    margin-top: 5vh;
+    margin-left: 25%;
+  }
+}
+
+@media (width <= 400px) {
+  #wrapper {
+    background-color: #7660abed;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    align-self: center;
+    width: 60vw;
+    height: 110vh;
+    margin: 0 20% 20%;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-shadow: 10px 10px 10px 10px;
+  }
+
+  .submit {
+    color: #e5d5f5;
+    background-color: #0000;
+    border: 1px solid #e5d5f5;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    padding: 1%;
+    font-family: Black Ops One, cursive;
+    box-shadow: 5px 0 9px;
+  }
+
+  #player-name, #computer-name {
+    color: #e5d5f5;
+    font-family: Black Ops One, cursive;
+    font-size: 18px;
+  }
+
+  #game-name {
+    text-align: center;
+    color: #e5d5f5;
+    margin: 11vh 11vh 5vh 13px;
+    font-family: Black Ops One, cursive;
+    font-size: 30px;
+  }
+
+  #input-player-one, #input-player-two {
+    text-align: center;
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    position: relative;
+  }
+
+  #player-two-input, #player-one-input {
+    width: 50%;
+    height: 10%;
+  }
+
+  h2 {
+    color: #e5d5f5;
+    font-family: Black Ops One, cursive;
+    font-size: xx-large;
+  }
+
+  #container-2 {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+  }
+
+  #pick-1, #pick-2 {
+    text-align: center;
+    background-color: #e5d5f5;
+    border: 1px solid #9e9d9d;
+    border-radius: 10px;
+    width: 50%;
+    height: 30vh;
+    margin: 1%;
+    padding: 10%;
+    display: inline;
+  }
+
+  #container-3 {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  #image-container-pl-1 > button, #image-container-pl-2 > button {
+    text-align: center;
+    width: 70%;
+    height: 10vh;
+    margin: 1% 1% 1% 20%;
+    padding: 1%;
+    display: flex;
+    position: relative;
+  }
+
+  #play {
+    text-align: center;
+    color: #e5d5f5;
+    border: 3px solid #f0f8ff;
+    border-radius: 8px;
+    align-content: center;
+    width: 25%;
+    margin-top: 28vh;
+    margin-left: 35%;
+    font-family: Black Ops One, cursive;
+    font-size: 16px;
+    box-shadow: 9px 0 9px;
+  }
+
+  img {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  #countStart {
+    color: #f0f8ff;
+    margin-top: 10%;
+    font-family: Black Ops One, cursive;
+    font-size: 12px;
+  }
+
+  #winner-is {
+    text-align: center;
+    z-index: 2;
+    justify-content: center;
+    margin: 0;
+    font-size: 12px;
+    position: relative;
+  }
+}
+
+/*# sourceMappingURL=index.c92073ef.css.map */
